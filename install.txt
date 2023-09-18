@@ -4,8 +4,10 @@ Powershell als Admin ausführen
 
 dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
 dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
-wsl.exe --set-default-version 2
 wsl.exe --install -d Ubuntu
+wsl.exe --set-default-version 2
+
+Neustart
 
 In Ubuntu WSL Fenster:
 
