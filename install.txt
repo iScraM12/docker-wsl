@@ -92,7 +92,7 @@ sudo ln -s /opt/apache-maven-3.9.4 /opt/maven
 sudo nano /etc/profile.d/maven.sh
 
 
-export JAVA_HOME=/usr/bin/java
+export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
 export M2_HOME=/opt/maven
 export MAVEN_HOME=/opt/maven
 export PATH=${M2_HOME}/bin:${PATH}
