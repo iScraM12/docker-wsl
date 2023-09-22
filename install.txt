@@ -74,3 +74,33 @@ sudo install minikube-linux-amd64 /usr/local/bin/minikube
 minikube start
 minikube dashboard
 (Fehler von Dashboard ist ok)
+minikube stop
+
+---------------------------
+
+curl -fsSL https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo gpg --dearmor -o /etc/apt/keyrings/kubernetes-archive-keyring.gpg
+echo "deb [signed-by=/etc/apt/keyrings/kubernetes-archive-keyring.gpg] https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee /etc/apt/sources.list.d/kubernetes.list
+sudo apt update
+sudo apt install kubectl
+
+---------------------------
+
+wget https://dlcdn.apache.org/maven/maven-3/3.8.6/binaries/apache-maven-3.8.6-bin.tar.gz 
+sudo tar xzf apache-maven-3.8.6-bin.tar.gz -C /opt 
+sudo ln -s /opt/apache-maven-3.8.6 /opt/maven 
+
+sudo nano /etc/profile.d/maven.sh
+
+
+export JAVA_HOME=/usr/lib/jvm/default-java
+export M2_HOME=/opt/maven
+export MAVEN_HOME=/opt/maven
+export PATH=${M2_HOME}/bin:${PATH}
+
+ctrl+x -> y
+
+source /etc/profile.d/maven.sh 
+mvn -version 
+rm -f apache-maven-3.8.6-bin.tar.gz 
+
+
