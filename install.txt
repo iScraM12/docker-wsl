@@ -85,9 +85,9 @@ sudo apt install kubectl
 
 ---------------------------
 
-wget https://dlcdn.apache.org/maven/maven-3/3.8.6/binaries/apache-maven-3.8.6-bin.tar.gz 
-sudo tar xzf apache-maven-3.8.6-bin.tar.gz -C /opt 
-sudo ln -s /opt/apache-maven-3.8.6 /opt/maven 
+wget https://dlcdn.apache.org/maven/maven-3/3.8.6/binaries/apache-maven-3.9.4-bin.tar.gz 
+sudo tar xzf apache-maven-3.9.4-bin.tar.gz -C /opt 
+sudo ln -s /opt/apache-maven-3.9.4 /opt/maven 
 
 sudo nano /etc/profile.d/maven.sh
 
