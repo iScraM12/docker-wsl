@@ -53,7 +53,7 @@ sudo dockerd
 docker run --rm hello-world
 ```
 
-## -------------Docker in Windows und ohne sude nutzbar machen--------------
+## -------------Docker in Windows und ohne sudo nutzbar machen--------------
 
 ```
 cd /home/username
