@@ -73,6 +73,8 @@ curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-
 sudo install minikube-linux-amd64 /usr/local/bin/minikube
 minikube start
 minikube dashboard
+minikube addons enable ingress
+minikube addons enable ingress-dns
 (Fehler von Dashboard ist ok)
 minikube stop
 
