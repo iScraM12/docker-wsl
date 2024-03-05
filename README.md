@@ -10,12 +10,12 @@ wsl.exe --install -d Ubuntu
 wsl.exe --set-default-version 2
 ```
 
-### Neustart
-
 ### In Ubuntu WSL Fenster:
 
 #### Username vergeben
 #### Passwort vergeben
+
+### Neustart
 
 ## -------------Docker sauber installieren und konfigurieren--------------
 
@@ -23,6 +23,9 @@ wsl.exe --set-default-version 2
 sudo apt update && sudo apt upgrade
 sudo apt remove docker docker-engine docker.io containerd runc
 sudo apt install --no-install-recommends apt-transport-https ca-certificates curl gnupg2
+```
+
+```
 sudo update-alternatives --config iptables
 ```
 
