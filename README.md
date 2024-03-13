@@ -59,7 +59,7 @@ docker run --rm hello-world
 ## -------------Docker in Windows und ohne sudo nutzbar machen--------------
 
 ```
-cd /home/username
+cd /home/user
 sudo nano .bashrc
 ```
 ### -> ganz unten einfügen:
